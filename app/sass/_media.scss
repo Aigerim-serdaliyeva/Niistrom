@@ -5,7 +5,15 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	
+	.header {
+    &__title {
+      display: none;
+    }
+
+    &__logo {
+      width: auto;
+    }
+  }
 }
 
 // ≥992px
@@ -15,7 +23,18 @@
   }    
 
   .header {
-    padding: 5px 0;
+    &__content {
+      height: auto;
+      padding: 5px 0;
+    }
+
+    &__body {
+      align-items: center;
+    }
+
+    &__language {
+      margin-right: 15px;
+    }
   }
 
   .footer {

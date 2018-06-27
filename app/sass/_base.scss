@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   background-color:$accent;
   color: $yellow !important;
-  white-space: nowrap;
+  // white-space: nowrap;
   border: 1px solid $accent;
   cursor: pointer;
 
@@ -225,6 +225,15 @@ h1, h2, h3, h4, h5, h6 {
 
   &:active {
     top: 1px;
+  }
+
+  &--yellow {
+    background-color: $yellow;
+    color: $accent !important;
+
+    &:hover {
+      background-color: #f9e94c;
+    } 
   }
 }
 
@@ -379,8 +388,8 @@ h1, h2, h3, h4, h5, h6 {
 		&-prev, &-next {
 			position: absolute;
 			top: 50%;
-			width: 26px;
-      height: 50px;
+			width: 36px;
+      height: 48px;
       background-image: url('../img/arrow-left.png') !important;
       background-repeat: no-repeat !important;
       background-position: center center !important;
@@ -405,14 +414,13 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     &-dot {
-      width: 16px;
-      height: 16px;
+      width: 15px;
+      height: 15px;
       background: $accent !important;
       margin: 0 5px;
-      border-radius: 50%;
 
       &.active {
-        background: darken($accent, 15%) !important;
+        background: #333399 !important;
       } 
     }
 	}

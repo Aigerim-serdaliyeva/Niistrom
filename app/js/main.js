@@ -160,6 +160,53 @@ $(document).ready(function () {
     }
   });
 
+  $(".carousel-project").owlCarousel({
+    loop: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false, dots: true, nav: false },
+      480: { items: 2, mouseDrag: true, dots: true, nav: false },
+      991: { items: 3, mouseDrag: true, dots: true, nav: false },
+    },
+  });
+
+  $(".carousel-message").owlCarousel({
+    loop: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false, dots: true, nav: false },
+      480: { items: 2, mouseDrag: true, dots: false, nav: true },
+      991: { items: 3, mouseDrag: true, dots: false, nav: true },
+    },
+  });
+
+  $(".carousel-employee").owlCarousel({
+    loop: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false, dots: true, nav: false },
+      480: { items: 2, mouseDrag: true, dots: true, nav: false },
+      991: { items: 4, mouseDrag: true, dots: true, nav: false },
+    },
+  });
+
+  $(".carousel-blog").owlCarousel({
+    loop: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false, dots: true, nav: false },
+      480: { items: 2, mouseDrag: true, dots: false, nav: true },
+      991: { items: 3, mouseDrag: true, dots: false, nav: true },
+    },
+  });
 
   $(".carousel-certificates").owlCarousel({
     loop: true,
@@ -172,8 +219,18 @@ $(document).ready(function () {
     },
   });
 
+  $(".tab").click(function(){
+    $(".tab").removeClass("active");
+    $(this).addClass("active");
+
+    var id = $(this).data("id");
+    $(".tabcontent").removeClass("active");
+    $("#"+id).addClass("active");
+  })
+
 
 });
+
 
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
