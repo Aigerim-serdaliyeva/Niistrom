@@ -1,13 +1,15 @@
 @import './fonts';
 @import './_mixins/circle';
 
-$default_family: MinionPro, Arial;
-$title_family: MinionPro, Arial;
+$default_family: OpenSans, Arial;
+$title_family: OpenSans, Arial;
 $font_size: 14px;
 $title_color: #000;
 $text_color: #000;
 
-$accent: #13478f;
+$accent: #000080;
+$yellow: #ffe800;
+$buttonHover: #2c2cc0;
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;

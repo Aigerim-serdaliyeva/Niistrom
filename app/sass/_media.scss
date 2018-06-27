@@ -58,8 +58,12 @@
 		}
   }    
 
-  .s {
-    
+  .s-service {
+    .tab {
+      &.active {
+        height: 50px;
+      }
+    }
   }
 }
 
@@ -105,10 +109,14 @@
     }      
   }
 
-  .s {
-    &-main {
+  .s-main {
       
-    } 
+  } 
+  
+  .s-service {
+    .tab {
+      font-size: 14px;
+    }
   }
 }
 
@@ -118,18 +126,24 @@
     display: flex;
   }
 
-  .s {
-    &-thanks {
-      padding: 150px 0 50px;
-      
+  .s-advantage {
+    .advantage {  
       &-title {
-        font-size: 30px;
+        font-size: 14px;
       }
+    }
+  }
 
-      &-text {
-        font-size: 16px;
-        margin-bottom: 40px;
-      }
+  .s-thanks {
+    padding: 150px 0 50px;
+    
+    &-title {
+      font-size: 30px;
+    }
+
+    &-text {
+      font-size: 16px;
+      margin-bottom: 40px;
     }
   }
 }
