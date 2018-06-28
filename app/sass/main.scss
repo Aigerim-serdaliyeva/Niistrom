@@ -377,6 +377,38 @@
   }
 }
 
+.s-institut {
+  background-image: url("../img/institut-back.jpg");
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+
+  .list {
+    li {
+      font-size: 14px;
+      margin-bottom: 15px;
+      &::before {
+        @include circle(9px);
+        margin: 3px 8px 0 0;
+      }
+    }
+  }
+
+  .owl-carousel {
+    .owl {
+      &-dot {
+        background: $yellow !important;
+        &.active {
+          background: #efdc23 !important;
+        }
+      }
+    }
+  }
+}
+
 .s-message {
 
   .carousel-message {

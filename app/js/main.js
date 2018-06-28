@@ -172,6 +172,30 @@ $(document).ready(function () {
     },
   });
 
+  
+  $(".carousel-gallery").owlCarousel({
+    loop: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 2, mouseDrag: false, dots: true, nav: false },
+      991: { items: 2, mouseDrag: true, dots: true, nav: false },
+    },
+  });
+
+  $(".carousel-attestat").owlCarousel({
+    loop: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false, dots: true, nav: false },
+      480: { items: 2, mouseDrag: true, dots: true, nav: false },
+      991: { items: 1, mouseDrag: true, dots: true, nav: false },
+    },
+  });
+
   $(".carousel-message").owlCarousel({
     loop: true,
     smartSpeed: 500,
