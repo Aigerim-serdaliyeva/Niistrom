@@ -94,7 +94,7 @@
       .form {
         &__content {
           flex-direction: column;
-          max-width: 500px;
+          max-width: 500px !important;
         } 
         
         &__info {

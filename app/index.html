@@ -48,7 +48,7 @@
             </div>
   
             <div class="address-block d-none d-lg-block">
-              г.. Алматы, ул. Радостовца, <br>
+              г.. Алматы, ул. Радостовца, 
               152/6, офис 109, 110
             </div>
   
@@ -141,28 +141,7 @@
         </div>
         
         
-        <!-- <div class="form form--vertical wow slideInLeft">
-          <form action="/mail.php" method="post">
-            <div class="form__title">Собираетесь в путешествие, но не знаете как и с чего начать? Доверьтесь нам и сэкономьте!</div>
-            <div class="form__content">
-              <input type="hidden" name="info" value="Оставьте заявку на комплексные туристические услуги и получите их со скидкой в 20%!">
-
-              <div class="input-div">
-                <input type="text" class="input" name="name" placeholder="Имя">
-              </div>
-
-              <div class="input-div">
-                <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required>
-                <span class="error-message">Заполните это поле</span>
-              </div>
-
-              <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button>
-
-              <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
-            </div>
-          </form>
-        </div> -->
-
+        
       </div>
     </section>
 
@@ -663,33 +642,49 @@
       </div>
     </section>
 
-    <section class="section s-test">
+    <section class="section s-questions">
       <div class="container">
-
-        <div class="form form--horizontal wow slideInUp">
+        <div class="section-title">Есть вопросы?</div>
+        <div class="form form--vertical wow slideInLeft">
           <form action="/mail.php" method="post">
-            <div class="form__title">Собираетесь в путешествие, но не знаете как и с чего начать? Доверьтесь нам и сэкономьте!</div>
+            <div class="form__title">Задайте вопрос по испытанию строительных материалов нашему специалисту и получите подробный ответ!</div>
             <div class="form__content">
+              <input type="hidden" name="info" value="Задайте вопрос по испытанию строительных материалов нашему специалисту и получите подробный ответ!">
 
-              <input type="hidden" name="info" value="Оставьте заявку на комплексные туристические услуги и получите их со скидкой в 20%!">
-
-              <div class="input-div">
-                <input type="text" class="input" name="name" placeholder="Имя">
+              <div class="form__top">
+                <div class="form__input">
+                  <div class="input-div">
+                    <input type="text" class="input" name="name" placeholder="Ваше имя*" required>
+                    <span class="error-message">Заполните это поле</span>
+                  </div>
+    
+                  <div class="input-div">
+                    <input type="text" class="input" name="name" placeholder="Название компании">
+                  </div>
+    
+                  <div class="input-div">
+                    <input type="tel" class="input" name="phone" placeholder="Введите номер телефона*" required>
+                    <span class="error-message">Заполните это поле</span>
+                  </div>
+    
+                  <div class="input-div">
+                    <input type="email" class="input" name="phone" placeholder="Введите e-mail*" required>
+                    <span class="error-message">Заполните это поле</span>
+                  </div>
+                </div>
+  
+                <div class="form__textarea">
+                  <textarea placeholder="Введите текст вопроса"></textarea>
+                </div>
               </div>
-
-              <div class="input-div">
-                <input type="email" class="input" name="email" placeholder="E-mail *" required="">
-                <span class="error-message">Заполните это поле</span>
+              
+                            
+              <div class="form__bottom">                
+                <div class="form__info">*Ваши данные защищены и не будут переданы третьим лицам</div>
+                <button class="button ajax-submit" type="submit" id="zadat_vopros">Задать вопрос</button>
               </div>
-
-              <div class="input-div">
-                <input type="tel" class="input" name="phone" placeholder="Номер телефона *" required="">
-                <span class="error-message">Заполните это поле</span>
-              </div>
-
-              <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button>
+              
             </div>
-            <div class="form__info">*Гарантируем 100% сохранность Ваших данных</div>
           </form>
         </div>
 
@@ -700,15 +695,22 @@
       <div class="container">
         <div class="footer__content">
           <a href="/" class="logo">
-            <img src="./img/logo.png" alt="">
+            <img src="./img/logo-white.png" alt="">
           </a>
 
-          <div class="footer__address"></div>
-
-          <div class="footer__phone">Телефоны:
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317 - 01 - 64</a>
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 778 997 - 26 - 30</a>
+          <div class="phone-block">
+            <a href="tel:+77272503069" class="text-phone" id="phone_number">+7 (727) 250-30-69</a> 
+            <a href="tel:+77272745875" class="text-phone" id="phone_number">+7 (727) 274-58-75</a> 
+            <a href="tel:+77272740616" class="text-phone" id="phone_number">+7 (727) 274-06-16</a> 
+            <a href="tel:+77272747540" class="text-phone" id="phone_number">+7 (727) 274-75-40</a>
           </div>
+
+          <div class="address-block">
+              г.. Алматы, ул. Радостовца, 
+              152/6, офис 109, 110
+          </div>
+
+          <a href="#" class="button button--yellow " data-remodal-target="zvonok-modal">Заказать обратный звонок</a>
 
           <div class="footer__comand">Создано командой
             <a href="//marketing-time.kz" target="_blank"><img src="./img/marketing-time.png" alt="MarketingTime"></a>

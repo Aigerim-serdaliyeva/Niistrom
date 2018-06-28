@@ -81,7 +81,7 @@
 }
 
 .address-block {
-
+  max-width: 185px;
 }
 
 .phone-block {
@@ -152,10 +152,17 @@
 
 .footer {
   background-color: $accent;
-  font-size: 16px;
 
   .logo {
-    margin-right: 100px;
+    margin-right: 90px;
+  }
+
+  .phone-block {
+    margin-right: 120px;
+  }
+
+  .address-block {
+    margin-right: 50px;
   }
 
   &__content {
@@ -166,17 +173,9 @@
     padding: 15px 0;
   }
 
-  &__address {
-    max-width: 165px;
-    margin-right: 40px;
-  }
-
-  &__phone {
-    margin-right: 55px;
-  }
 
   &__comand {
-    margin-left: 100px;
+    margin-left: 30px;
 
     a {
       margin-top: 3px;
