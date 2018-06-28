@@ -95,11 +95,10 @@
   top: 0;
   width: 100%;
   z-index: 98;
-  background-color: rgba(#fff, 0.7);
+  background-color: #fff;
+  border-bottom: 2px solid $accent;
 
   &--scrolled {
-    background-color: rgba(#fff, 1);      
-    border-bottom: 1px solid $accent;
   }
 
   &__content {
@@ -247,6 +246,50 @@
     text-align: left;
     font-weight: bold;
   }
+
+  .main {
+    position: relative;
+
+    &__title {
+      position: absolute;
+      top: 45px;
+      font-size: 24px;
+      font-weight: 600;
+      color: $yellow;
+
+      span {
+        display: block;
+        font-size: 16px;
+        font-weight: normal;
+        color: #fff;
+        text-align: right;
+      }
+    }
+
+    &__bottom {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+
+      &__content {
+        display: flex;
+      }
+
+      &__item {
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        background-color: $accent;
+        padding: 5px;
+        flex-grow: 1;
+        margin-right: 30px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }
 
 .s-advantage {
@@ -390,6 +433,7 @@
     li {
       font-size: 14px;
       margin-bottom: 15px;
+
       &::before {
         @include circle(9px);
         margin: 3px 8px 0 0;
@@ -397,16 +441,13 @@
     }
   }
 
-  .owl-carousel {
-    .owl {
-      &-dot {
-        background: $yellow !important;
-        &.active {
-          background: #efdc23 !important;
-        }
-      }
+  .carousel-gallery {
+    img:first-child {
+      margin-bottom: 15px;
     }
   }
+
+  
 }
 
 .s-message {
@@ -458,13 +499,13 @@
     flex-direction: column;
     align-items: center;
     padding: 30px 5px;
-    width: 262px;
-    height: 174px;
+    width: 100%;
     background-color: $accent;
 
     &-title {
       color: #fff;
       font-weight: 600;
+      flex-grow: 1;
       margin-bottom: 20px;
     }
 
@@ -514,6 +555,40 @@
   }
 }
 
+.s-questions {
+  .form {
+    max-width: 786px;
+    margin: 0 auto;
+
+    &__title {
+      color: #000;
+    }
+
+    &__content {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    &__inputs {
+      margin-right: 20px;      
+    }
+
+    .input-div:last-child {
+      margin-bottom: 0;
+    }
+
+    .textarea {
+      flex-grow: 1;
+    }
+
+    &__bottom {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
+  }
+}
 
 .s-thanks {
   background-image: url('../img/thanks-back.jpg');

@@ -160,6 +160,20 @@ $(document).ready(function () {
     }
   });
 
+  $(".carousel-main").owlCarousel({
+    nav: true,
+    dots: false,
+    loop: true,
+    items: 1,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { mouseDrag: false },
+      576: { mouseDrag: true },
+    },
+  });
+
   $(".carousel-project").owlCarousel({
     loop: true,
     smartSpeed: 500,
@@ -167,20 +181,23 @@ $(document).ready(function () {
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: true, nav: false },
+      576: { items: 2, mouseDrag: true, dots: true, nav: false },
       991: { items: 3, mouseDrag: true, dots: true, nav: false },
     },
   });
 
   
   $(".carousel-gallery").owlCarousel({
+    nav: false,
+    dots: true,
     loop: true,
+    items: 2,
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 2, mouseDrag: false, dots: true, nav: false },
-      991: { items: 2, mouseDrag: true, dots: true, nav: false },
+      0: { mouseDrag: false },
+      576: { mouseDrag: true },
     },
   });
 
@@ -191,7 +208,7 @@ $(document).ready(function () {
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: true, nav: false },
+      576: { items: 2, mouseDrag: true, dots: true, nav: false },
       991: { items: 1, mouseDrag: true, dots: true, nav: false },
     },
   });
@@ -203,7 +220,7 @@ $(document).ready(function () {
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: false, nav: true },
+      576: { items: 2, mouseDrag: true, dots: false, nav: true },
       991: { items: 3, mouseDrag: true, dots: false, nav: true },
     },
   });
@@ -215,7 +232,7 @@ $(document).ready(function () {
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: true, nav: false },
+      576: { items: 2, mouseDrag: true, dots: true, nav: false },
       991: { items: 4, mouseDrag: true, dots: true, nav: false },
     },
   });
@@ -227,7 +244,7 @@ $(document).ready(function () {
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: false, nav: true },
+      576: { items: 2, mouseDrag: true, dots: false, nav: true },
       991: { items: 3, mouseDrag: true, dots: false, nav: true },
     },
   });
@@ -239,7 +256,7 @@ $(document).ready(function () {
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      480: { items: 2, mouseDrag: true, dots: false, nav: true },
+      576: { items: 2, mouseDrag: true, dots: false, nav: true },
     },
   });
 

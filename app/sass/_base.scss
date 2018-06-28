@@ -271,7 +271,8 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
     text-align: left;
     color: red;
-    padding-left: 35px;
+    font-size: 12px;
+    padding-left: 11px;
     margin-top: 5px;
 	}
 
@@ -324,7 +325,7 @@ h1, h2, h3, h4, h5, h6 {
     
   &__title {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
     color: $accent;
     text-align: center;
     margin-bottom: 20px;
@@ -332,6 +333,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .input-div, .button {
     margin-bottom: 10px;
+  }
+
+  .input-div {
+    width: 180px;
   }
 
   &__info {
@@ -357,11 +362,6 @@ h1, h2, h3, h4, h5, h6 {
       padding: 8px 3px;
     }
 
-    .input {
-      // width: 180px;
-      min-width: 180px;
-    }
-
     .input-div {
       margin-right: 20px;
     }
@@ -370,37 +370,15 @@ h1, h2, h3, h4, h5, h6 {
   &--vertical {    
     margin: 0 auto;
     
-    .form {
-      &__content {
-        max-width: 786px;
-        margin: 0 auto;    
-      }
-
-      &__top {
-        display: flex;
-      }
-
-      &__input {
-        margin-right: 20px;
-      }
-
-      &__textarea {
-        width: 100%;
-      }
-    }
-
     .button {
-      width: 100%;
-    }
-
-    .input {
       width: 180px;
-      // max-width: 180px;
     }
   }
 }
 
 .owl-carousel {
+  margin: 0 auto;
+
 	.owl {
     &-stage {
       display: flex;
@@ -422,7 +400,6 @@ h1, h2, h3, h4, h5, h6 {
 			top: 50%;
 			width: 36px;
       height: 48px;
-      background-image: url('../img/arrow-left.png') !important;
       background-repeat: no-repeat !important;
       background-position: center center !important;
       transform: translateY(-50%);
@@ -431,6 +408,7 @@ h1, h2, h3, h4, h5, h6 {
 		}
 
 		&-prev {
+      background-image: url('../img/arrow-left.png') !important;
       left: 0px;
 		}
 
@@ -442,7 +420,7 @@ h1, h2, h3, h4, h5, h6 {
     &-dots {
       position: relative;
       text-align: center;
-      margin-top: 15px;
+      margin-top: 20px;
     }
     
     &-dot {
@@ -455,7 +433,27 @@ h1, h2, h3, h4, h5, h6 {
         background: #333399 !important;
       } 
     }
-	}
+  }
+  
+  &--yellow {
+    .owl {
+      &-prev {
+        background-image: url('../img/arrow-left--yellow.png') !important;
+      }
+
+      &-next {
+        background-image: url('../img/arrow-right--yellow.png') !important;
+      }
+  
+      &-dot {
+        background: $yellow !important;
+
+        &.active {
+          background: #efdc23 !important;
+        }
+      }
+    }
+  }
 }
 
 .remodal {
