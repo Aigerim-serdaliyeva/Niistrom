@@ -516,26 +516,190 @@
 
 
 .s-thanks {
-  padding: 200px 0 100px 0;
+  background-image: url('../img/thanks-back.jpg');
+  padding: 180px 0 100px 0;
+  text-align: left;
   flex-grow: 1;
+
+  .container {
+    // background-image: url('../img/thanks-back.jpg');
+  }
     
   &__title {
-    color: $accent;
-    font-size: 48px;
-    font-weight: normal;
+    color: $yellow;
+    font-size: 30px;
+    font-weight: bold;
     margin-bottom: 30px;
   }
 
   &__text {
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 600;
     margin: 0 0 125px;
   }
 
   &__link {
     text-decoration: underline;
-    color: $accent;
   }
 }
 
+
+.more {
+  max-width: 650px;
+  box-shadow: 0px 4px 16.38px 1.62px rgba(0, 0, 0, 0.38);
+  background-color: #edecec;
+
+
+  .employee {
+
+    &-block{
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    img {
+      margin-right: 25px;
+    }
+
+    &-name {
+      font-size: 18px;
+      color: $accent;
+      font-weight: 600;
+      margin: 20px 0 15px;
+    }
+
+    &-summary {
+      font-style: italic;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        list-style: none;
+        font-size: 12px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.fully {
+  max-width: 554px;
+  background-color: $accent;
+
+  .project {
+    
+    &__title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      span {
+        color: $yellow;
+      }
+    }
+
+    &__block {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+
+      img {
+        margin-right: 15px;
+      }
+    }
+
+    &__text {
+      font-style: italic;
+    }
+  }
+}
+
+.info {
+  max-width: 550px;
+  box-shadow: 0px 4px 16.38px 1.62px rgba(0, 0, 0, 0.38);
+  background-color: #edecec;
+
+  .project-service {
+
+    &__title {
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    img {
+      float: left;
+      margin: 0 15px 10px 0;
+    }
+
+    &__text {
+      font-size: 12px;
+      color: $accent;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        font-size: 12px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.service-modal {
+  max-width: 652px;
+  box-shadow: 0px 4px 16.38px 1.62px rgba(0, 0, 0, 0.38);
+  background-color: #edecec;
+
+  &__content {
+    display: flex;
+  }
+
+  &__block {
+    max-width: 390px;
+    margin-right: 10px;
+
+    &__1 {
+      display: flex;
+      img {
+        margin-right: 15px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      font-size: 12px;
+      font-weight: 600;
+      list-style: none;
+    }
+  }
+
+  .form {
+    max-width: 262px;
+    background-image: url('../img/form-modal-back.jpg');
+
+    &__title {
+      font-size: 14px;
+    }
+
+    &__content {
+      width: 180px;
+    }
+  }
+}
 
 @import './_media';

@@ -29,61 +29,106 @@
     <header class="header">
       <div class="container">
         <div class="header__content">
-          <a href="/" class="logo">
-            <img src="./img/logo.png" alt="">
-          </a>
-
-          <h3 class="header__title">
-          </h3>
+          <div class="header__logo">
+            <a href="/" class="logo">
+              <img src="./img/logo.png" alt="">
+            </a>
+  
+            <h3 class="header__title">
+                Научно-исследовательский и проектный институт строительных материалов
+            </h3>    
+          </div>
 
           <div class="grow"></div>
 
-          <div class="header__phone d-none d-sm-block">
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317- 01-64</a>
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 (778) 997-26-30</a>
+          <div class="header__body">
+            <div class="header__grafik d-none d-lg-block">
+              Время работы: <br>
+              Пн.-пт.: 09:00-18:00
+            </div>
+  
+            <div class="address-block d-none d-lg-block">
+              г.. Алматы, ул. Радостовца, 
+              152/6, офис 109, 110
+            </div>
+  
+            <div class="phone-block d-none d-lg-block">
+              <a href="tel:+77272503069" class="text-phone" id="phone_number">+7 (727) 250-30-69</a>
+              <a href="tel:+77272745875" class="text-phone" id="phone_number">+7 (727) 274-58-75</a>
+            </div>
+  
+            <div class="phone-block d-none d-lg-block">
+              <a href="tel:+77272740616" class="text-phone" id="phone_number">+7 (727) 274-06-16</a>
+              <a href="tel:+77272747540" class="text-phone" id="phone_number">+7 (727) 274-75-40</a>
+            </div>
+  
+            <div class="header__language">
+              <a href="" class="active">RU</a> / <a href="">EN</a>
+            </div>
+
+            <nav class="main-menu">
+              <div class="container">
+                <ul>
+                  <li>
+                    <a class="link" href="#service">Услуги</a>
+                  </li>
+                  <li>
+                    <a class="link" href="">Опыт</a>
+                  </li>
+                  <li>
+                    <a class="link" href="">Об институте</a>
+                  </li>
+                  <li>
+                    <a class="link" href="">Сотрудники</a>
+                  </li>
+                  <li>
+                    <a class="link" href="">Блог</a>
+                  </li>
+                  <li class="last">
+                    <a class="link" href="#contact">Контакты</a>
+                  </li>                  
+                  <li class="d-lg-none">
+                    <a href="tel:+77272503069" class="text-phone" id="phone_number">+7 (727) 250-30-69</a>
+                  </li>
+                  <li class="d-lg-none">
+                    <a href="tel:+77272745875" class="text-phone" id="phone_number">+7 (727) 274-58-75</a>
+                  </li>
+                  <li class="d-lg-none">
+                    <a href="tel:+77272740616" class="text-phone" id="phone_number">+7 (727) 274-06-16</a>
+                  </li>
+                  <li class="d-lg-none">
+                    <a href="tel:+77272747540" class="text-phone" id="phone_number">+7 (727) 274-75-40</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+      
+            <a href="#" class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать обратный звонок</a>
+
+            <button class="hamburger hamburger--elastic hamburger--accessible">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+        
           </div>
 
-          <a href="#" class="button d-none d-sm-block" data-remodal-target="zvonok-modal">Заказать звонок</a>
 
-          <button class="hamburger hamburger--elastic hamburger--accessible">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
         </div>
 
-        <nav class="main-menu">
-          <div class="container">
-            <ul>
-              <li>
-                <a class="link" href="/#main">Главная</a>
-              </li>
-              <li>
-                <a class="link" href="/#service">Услуги</a>
-              </li>
-              <li class="last">
-                <a class="link" href="/#contact">Контакты</a>
-              </li>
-              <li class="d-lg-none d-xl-none">
-                <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317- 01-64</a>
-              </li>
-              <li class="d-lg-none d-xl-none">
-                <a href="tel:+" class="text-phone" id="phone_number">+ 7 (778) 997-26-30</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
       </div>
     </header>
 
-    <section class="section s-thanks">
+    <section class="section s-thanks inverse">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-11 offset-lg-1">
-            <div class="s-thanks__title">Спасибо!</div>
-            <div class="s-thanks__text">Ваша заявка успешно принята. <br>
-                В ближайшее время мы свяжемся с Вами!</div>
-            <a href="/" class="s-thanks__link">Вернуться на главную</a>  
+        <div class="s-thanks__content">
+          <div class="row">
+            <div class="col-lg-11 offset-lg-1">
+              <div class="s-thanks__title">Поздравляем!</div>
+              <div class="s-thanks__text">Ваша заявка успешно принята! <br>
+                  В ближайшее время наш специалист свяжется с Вами!</div>
+              <a href="/" class="s-thanks__link">Вернуться на главную</a>  
+            </div>
           </div>
         </div>
       </div>
@@ -93,15 +138,22 @@
       <div class="container">
         <div class="footer__content">
           <a href="/" class="logo">
-            <img src="./img/logo.png" alt="">
+            <img src="./img/logo-white.png" alt="">
           </a>
 
-          <div class="footer__address"></div>
-
-          <div class="footer__phone">Телефоны:
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 (727) 317 - 01 - 64</a>
-            <a href="tel:+" class="text-phone" id="phone_number">+ 7 778 997 - 26 - 30</a>
+          <div class="phone-block">
+            <a href="tel:+77272503069" class="text-phone" id="phone_number">+7 (727) 250-30-69</a> 
+            <a href="tel:+77272745875" class="text-phone" id="phone_number">+7 (727) 274-58-75</a> 
+            <a href="tel:+77272740616" class="text-phone" id="phone_number">+7 (727) 274-06-16</a> 
+            <a href="tel:+77272747540" class="text-phone" id="phone_number">+7 (727) 274-75-40</a>
           </div>
+
+          <div class="address-block">
+              г.. Алматы, ул. Радостовца, 
+              152/6, офис 109, 110
+          </div>
+
+          <a href="#" class="button button--yellow " data-remodal-target="zvonok-modal">Заказать обратный звонок</a>
 
           <div class="footer__comand">Создано командой
             <a href="//marketing-time.kz" target="_blank"><img src="./img/marketing-time.png" alt="MarketingTime"></a>
