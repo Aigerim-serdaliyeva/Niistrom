@@ -267,6 +267,8 @@
 }
 
 .s-service {
+  background-image: url('../img/service-back.jpg');
+
   .tab {
     display: flex;
     align-items: center;
@@ -315,6 +317,7 @@
 
   &__science {
     display: flex;
+    margin-bottom: 30px;
 
     .block {
       flex-shrink: 0;
