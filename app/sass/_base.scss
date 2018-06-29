@@ -503,7 +503,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .form {
       &__content {
-        width: 210px;
+        max-width: 210px;
       }
     }
   }

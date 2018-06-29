@@ -1258,7 +1258,7 @@
    
     <div class="service-modal__content">
       <div class="service-modal__block">
-        <div class="service-modal__block__1">
+        <div class="service-modal__head">
           <img src="./img/service-modal-1.jpg" alt="">
           <div class="service-modal__title">Физико-механические
             испытания портландцемента
@@ -1279,14 +1279,13 @@
 
       <div class="form form--vertical">
         <form action="/mail.php" method="post">
-          <div class="form__title">Оставьте заявку,
+          <div class="form__title">Оставьте заявку, <br>
               и наш специалист свяжется
               с Вами для обсуждения стоимости
               и сроков испытания Ваших
               строительных материалов</div>
           <div class="form__content">
-            <input type="hidden" name="info" value="Оставьте заявку,и наш специалист свяжется с Вами для обсуждения стоимости
-            и сроков испытания Ваших строительных материалов">
+            <input type="hidden" name="info" value="Оставьте заявку на Физико-механические испытания портландцемента и шлакопортландцемента">
   
             <div class="input-div">
               <input type="text" class="input" name="name" placeholder="Как к Вам обращаться? *" required>
@@ -1302,15 +1301,73 @@
               <input type="email" class="input" name="phone" placeholder="Введите e-mail">
             </div>
   
-            <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button>
-  
-            <div class="form__info">* Ваши данные защищены и не будут
-                переданы третьим лицам</div>
+            <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button>  
           </div>
+
+          <div class="form__info">* Ваши данные защищены и не будут переданы третьим лицам</div>
+
         </form>
       </div>
-    </div>
+    </div>    
     
+  </div>
+
+  <div class="remodal service-modal" data-remodal-id="service-modal-2" data-remodal-options="hashTracking: true">
+    <button data-remodal-action="close" class="remodal-close remodal-close--black"></button>   
+    
+    <div class="service-modal__content">
+      <div class="service-modal__block">
+        <div class="service-modal__head">
+          <img src="./img/service-modal-1.jpg" alt="">
+          <div class="service-modal__title">Физико-механические
+            испытания портландцемента
+            и шлакопортландцемента</div>
+        </div>
+        <ul>
+          <li>- Тонкость помола по остатку на сите </li>
+          <li>- Тонкость помола по удельной поверхности</li>
+          <li>- Нормальная густота цементного теста</li>
+          <li>- Сроки схватывания цемента</li>
+          <li>- Равномерность изменения объема цементного теста </li>
+          <li>- Предел прочности при изгибе и сжатии (нормальное 
+              твердение – 28 сут.)</li>
+          <li>- Предел прочности при изгибе и сжатии (после 
+              пропаривания) </li>
+        </ul>
+      </div>
+
+      <div class="form form--vertical">
+        <form action="/mail.php" method="post">
+          <div class="form__title">Оставьте заявку, <br>
+              и наш специалист свяжется
+              с Вами для обсуждения стоимости
+              и сроков испытания Ваших
+              строительных материалов</div>
+          <div class="form__content">
+            <input type="hidden" name="info" value="Оставьте заявку на Физико-механические испытания портландцемента и шлакопортландцемента">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Как к Вам обращаться? *" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Введите номер телефона*" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <div class="input-div">
+              <input type="email" class="input" name="phone" placeholder="Введите e-mail">
+            </div>
+  
+            <button class="button ajax-submit" type="submit" id="ostavit_zayavku">Оставить заявку</button>  
+          </div>
+
+          <div class="form__info">* Ваши данные защищены и не будут переданы третьим лицам</div>
+
+        </form>
+      </div>
+    </div>    
     
   </div>
 

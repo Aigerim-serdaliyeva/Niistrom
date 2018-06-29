@@ -173,6 +173,15 @@
   }
 }
 
+@media only screen and (max-width : 660px) {
+  .service-modal {
+    &__content {
+      flex-direction: column;
+      padding-bottom: 20px;
+    }
+  }
+}
+
 // ≥576px
 @include media-breakpoint-down(xs) {
   .call-me {
@@ -183,6 +192,17 @@
     .advantage {  
       &-title {
         font-size: 14px;
+      }
+    }
+  }
+
+  .service-modal {
+    &__head {
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        margin-bottom: 10px;
       }
     }
   }

@@ -909,21 +909,22 @@
   max-width: 652px;
   box-shadow: 0px 4px 16.38px 1.62px rgba(0, 0, 0, 0.38);
   background-color: #edecec;
+  padding: 0;
 
   &__content {
     display: flex;
   }
 
   &__block {
-    max-width: 390px;
-    margin-right: 10px;
+    padding: 30px 20px;    
+  }
 
-    &__1 {
-      display: flex;
-      img {
-        margin-right: 15px;
-        margin-bottom: 15px;
-      }
+  &__head {
+    display: flex;
+    margin-bottom: 15px;
+
+    img {
+      margin-right: 15px;
     }
   }
 
@@ -942,7 +943,9 @@
   }
 
   .form {
-    max-width: 262px;
+    width: 262px;
+    flex-shrink: 0;
+    padding: 40px 10px 30px;
     background-image: url('../img/form-modal-back.jpg');
 
     &__title {
