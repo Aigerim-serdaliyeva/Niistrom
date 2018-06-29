@@ -591,13 +591,21 @@
 }
 
 .s-thanks {
-  background-image: url('../img/thanks-back.jpg');
-  padding: 180px 0 100px 0;
   text-align: left;
   flex-grow: 1;
+  display: flex;
+  padding: 0;
 
   .container {
-    // background-image: url('../img/thanks-back.jpg');
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content {
+    background-image: url('../img/thanks-back.jpg');
+    background-size: cover;
+    padding: 180px 0 100px 0;
+    flex-grow: 1;
   }
     
   &__title {

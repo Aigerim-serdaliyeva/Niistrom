@@ -84,6 +84,13 @@
       }
     }
   }
+
+  .s-thanks {
+    background-image: url('../img/thanks-back.jpg');
+    &__content {
+      background-image: none;
+    }
+  }
 }
 
 // ≥768px
