@@ -14,6 +14,25 @@
       width: auto;
     }
   }
+
+  .s-main {
+    .main {
+      &__title {
+        font-size: 22px;
+      }
+
+      &__item {
+        &--big {
+          width: 220px;
+        }
+
+        &--center {
+          font-size: 16px;
+        }
+      }
+    }
+    
+  }
 }
 
 // ≥992px
@@ -76,6 +95,14 @@
 			}
 		}
   }    
+
+  .s-main {
+    padding-top: 105px;
+
+    .aside {
+      margin-bottom: 30px;
+    }
+  }
 
   .s-service {
     .tab {

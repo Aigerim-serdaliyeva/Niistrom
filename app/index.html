@@ -122,36 +122,66 @@
     <section class="section s-main" id="main">
       <div class="container">
         <div class="row">
-          <div class="col col-lg-9">
+          <div class="col-md-6 offset-md-3 offset-lg-0 col-lg-4 col-xl-3 d-flex order-lg-2">
+            <div class="aside">
+              <div class="aside__top">
+                  <div class="aside__top__content"></div>
+              </div>
+
+              <img src="./img/quiz.jpg" alt="">
+
+              <div class="aside__text">Ответьте на 4 вопроса теста
+                  и через 30 минут получите расчет
+                  стоимости и сроков испытания
+                  Ваших строительных материалов!</div>
+
+              <button class="button button--yellow">Получить расчет стоимости
+                  и сроков испытаний</button>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-xl-9">
             <div class="owl-carousel owl-carousel--yellow carousel-main">
               <div class="main">
                 <img src="./img/main-1.jpg" alt="">
                 <h1 class="main__title">Обеспечим полную надежность и качество испытаний Ваших
                     строительных материалов и сооружений от 990 тг. за 1 пробу</h1>
-                <div class="main__bottom">
-                  <h3 class="main__bottom__title">НИИСТРОМПРОЕКТ:</h3>
 
+                <div class="main__bottom d-none d-md-block">
                   <div class="row">
-                    col-4
+                    <div class="col-sm-4 offset-sm-4">
+                      <h3 class="main__item main__bottom__title">НИИСТРОМПРОЕКТ:</h3>
+                    </div>
                   </div>
 
-                  <div class="main__bottom__content">
-                    <h4 class="main__bottom__item">Испытание <br>строительных материалов</h4>
-                    <h4 class="main__bottom__item">Разработка <br>проектно-сметной документации</h4>
-                    <h4 class="main__bottom__item">Выдача <br>протоколов испытаний</h4>
+                  <div class="row">
+                    <div class="col-sm-4 d-flex"><h4 class="main__item">Испытание <br>строительных материалов</h4></div>
+                    <div class="col-sm-4 d-flex"><h4 class="main__item">Разработка <br>проектно-сметной документации</h4></div>
+                    <div class="col-sm-4 d-flex"><h4 class="main__item">Выдача <br>протоколов испытаний</h4></div>
                   </div>
                 </div>
               </div>
               <div class="main">
                 <img src="./img/main-2.jpg" alt="">
-                <h2 class="main__title">В связи с началом строительного сезона <br>
-                    получите скидку в 15% на разработку состава бетона!
-                  <span>*Предложение действует до 31 августа 2018 года</span>
+                <h2 class="main__title">
+                  <span>
+                      В связи с началом строительного сезона <br>
+                      получите скидку в 15% на разработку состава бетона!<br>
+                      <span class="main__aksia">*Предложение действует до 31 августа 2018 года</span>
+                  </span>
                 </h2>
               </div>
               <div class="main">
                 <img src="./img/main-3.jpg" alt="">
-                <h2 class="main__title"></h2>
+                <div class="main__bottom main__bottom--flex d-none d-md-flex">
+                  <div class="main__item main__item--big">Разработка,исследование
+                      и корректировка составов
+                      бетонов и сухих смесей</div>
+                  <div class="main__item main__item--center">Услуги научного
+                      отдела института</div>
+                  <div class="main__item main__item--big">Исследование отходов
+                      промышленных производств</div>
+                </div>
               </div>
               <div class="main">
                 <img src="./img/main-4.jpg" alt="">
@@ -160,13 +190,8 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="aside">
-              <div class="aside__top">
-
-              </div>
-            </div>
-          </div>
+          
+          
         </div>
         
         
@@ -832,7 +857,6 @@
       </form>
     </div>
   </div>
-
 
   <div class="remodal employee-modal" data-remodal-id="employee-modal-1" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close remodal-close--black"></button>   

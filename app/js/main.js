@@ -161,16 +161,14 @@ $(document).ready(function () {
   });
 
   $(".carousel-main").owlCarousel({
-    nav: true,
-    dots: false,
     loop: true,
     items: 1,
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { mouseDrag: false },
-      576: { mouseDrag: true },
+      0: { mouseDrag: false, dots: true, nav: false },
+      768: { mouseDrag: true, dots: false, nav: true },
     },
   });
 
