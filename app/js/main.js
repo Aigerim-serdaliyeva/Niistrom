@@ -221,7 +221,7 @@ $(document).ready(function () {
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
       576: { items: 2, mouseDrag: true, dots: false, nav: true },
-      991: { items: 3, mouseDrag: true, dots: false, nav: true },
+      991: { items: 3 },
     },
   });
 
