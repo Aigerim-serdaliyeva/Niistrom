@@ -173,14 +173,16 @@ $(document).ready(function () {
   });
 
   $(".carousel-project").owlCarousel({
+    dots: true, 
+    nav: false,
     loop: true,
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      576: { items: 2, mouseDrag: true, dots: true, nav: false },
-      991: { items: 3, mouseDrag: true, dots: true, nav: false },
+      0: { items: 1, mouseDrag: false,  },
+      576: { items: 2, mouseDrag: true },
+      991: { items: 3 },
     },
   });
 
@@ -200,14 +202,16 @@ $(document).ready(function () {
   });
 
   $(".carousel-attestat").owlCarousel({
+    dots: true, 
+    nav: false,
     loop: true,
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      576: { items: 2, mouseDrag: true, dots: true, nav: false },
-      991: { items: 1, mouseDrag: true, dots: true, nav: false },
+      0: { items: 1, mouseDrag: false },
+      576: { items: 2, mouseDrag: true },
+      991: { items: 1 },
     },
   });
 
@@ -225,13 +229,15 @@ $(document).ready(function () {
 
   $(".carousel-employee").owlCarousel({
     loop: true,
+    dots: true, 
+    nav: false,
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
     responsive: {
-      0: { items: 1, mouseDrag: false, dots: true, nav: false },
-      576: { items: 2, mouseDrag: true, dots: true, nav: false },
-      991: { items: 4, mouseDrag: true, dots: true, nav: false },
+      0: { items: 1, mouseDrag: false },
+      576: { items: 2, mouseDrag: true },
+      991: { items: 4 },
     },
   });
 
@@ -243,7 +249,7 @@ $(document).ready(function () {
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
       576: { items: 2, mouseDrag: true, dots: false, nav: true },
-      991: { items: 3, mouseDrag: true, dots: false, nav: true },
+      991: { items: 3 },
     },
   });
 
@@ -265,7 +271,11 @@ $(document).ready(function () {
     var id = $(this).data("id");
     $(".tabcontent").removeClass("active");
     $("#"+id).addClass("active");
-  })
+  });
+
+  $(".modal-toggle").click(function() {
+    $("[data-remodal-id=" + $(this).data('show') + "]").remodal().open();
+  });
 
 
 });
