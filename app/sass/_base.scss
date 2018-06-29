@@ -369,6 +369,12 @@ h1, h2, h3, h4, h5, h6 {
 
   &--vertical {    
     margin: 0 auto;
+
+    .form {
+      &__content {
+        margin: 0 auto;
+      }
+    }
     
     .button {
       width: 180px;
@@ -468,6 +474,10 @@ h1, h2, h3, h4, h5, h6 {
     // color: $text_color;
     z-index: 20;
 
+    &:hover {
+      color: #fff;
+    }
+
     &--black {
       color: #000;
     }
@@ -482,8 +492,19 @@ h1, h2, h3, h4, h5, h6 {
     padding: 40px 20px 20px;
     background-color: $accent;
 
-    .input {
-      width: 100%;
+    .form {
+      &__content {
+        width: 210px;
+      }
+
+      .input-div, .button {
+        width: 100%;
+      }
+
+      .button {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
     }
   }
 
