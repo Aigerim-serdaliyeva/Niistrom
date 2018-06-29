@@ -271,7 +271,11 @@ $(document).ready(function () {
     var id = $(this).data("id");
     $(".tabcontent").removeClass("active");
     $("#"+id).addClass("active");
-  })
+  });
+
+  $(".modal-toggle").click(function() {
+    $("[data-remodal-id=" + $(this).data('show') + "]").remodal().open();
+  });
 
 
 });

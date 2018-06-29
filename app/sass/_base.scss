@@ -258,6 +258,11 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px solid #fff;
   }
 
+  &--small {
+    font-size: 10px;
+    padding: 3px 10px;
+  }
+
   &.error {
     border-color: red;
     color: red;
@@ -293,6 +298,7 @@ h1, h2, h3, h4, h5, h6 {
   
   .inverse & {
     color: #fff;
+    border-color: #fff;
 
     &::-webkit-input-placeholder {
       color: #fff;
@@ -333,11 +339,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .input-div, .button {
     margin-bottom: 10px;
-  }
-
-  .input-div {
-    width: 180px;
-  }
+  }  
 
   &__info {
     font-size: 11px;
@@ -364,6 +366,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .input-div {
       margin-right: 20px;
+      width: 180px;
     }
   }
 
@@ -373,11 +376,17 @@ h1, h2, h3, h4, h5, h6 {
     .form {
       &__content {
         margin: 0 auto;
+        max-width: 180px;
       }
     }
     
+    .input-div, .button {
+      width: 100%;
+    }
+
     .button {
-      width: 180px;
+      padding-left: 5px;
+      padding-right: 5px;
     }
   }
 }
@@ -496,15 +505,6 @@ h1, h2, h3, h4, h5, h6 {
       &__content {
         width: 210px;
       }
-
-      .input-div, .button {
-        width: 100%;
-      }
-
-      .button {
-        padding-left: 5px;
-        padding-right: 5px;
-      }
     }
   }
 
@@ -513,5 +513,56 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     text-align: center;
     margin-bottom: 20px;
+  }
+}
+
+.checkbox {
+  display: block;
+  text-align: left;
+
+  [type="checkbox"], [type="radio"] {
+   display: none;
+
+    & + span {
+      cursor: pointer;
+      position: relative;
+      display: flex;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #fff;  
+        margin-right: 15px;
+      }
+
+      &:after {
+        display: none;
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 14px;
+        height: 14px;
+        background-image: url('../img/check.png');
+      }
+    }
+
+    &:checked + span:after {
+      display: block;
+    }
+  }
+}
+
+.inputfile {
+  cursor: pointer;
+  input {
+    display: none;
+  }
+
+  &:after {
+    content: "Прикрепить файл";
+    display: inline-block;
   }
 }
