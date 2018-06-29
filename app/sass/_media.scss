@@ -171,6 +171,20 @@
       font-size: 14px;
     }
   }
+
+  .s-questions {
+    .form {
+      &__bottom {
+        flex-direction: column;
+      }
+
+      .button {
+        align-self: flex-end;
+        width: auto;
+        margin-top: 10px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 660px) {
@@ -192,6 +206,19 @@
     .advantage {  
       &-title {
         font-size: 14px;
+      }
+    }
+  }
+
+  .s-questions {
+    .form {
+      &__content {
+        flex-direction: column;
+      }
+
+      &__inputs {
+        margin-right: 0;
+        margin-bottom: 10px;
       }
     }
   }
