@@ -221,6 +221,18 @@
     display: flex;
   }
 
+  .s-main {
+    .main {
+      &__title {
+        font-size: 16px;
+
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
   .s-advantage {
     .advantage {  
       &-title {
