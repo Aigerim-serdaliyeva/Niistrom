@@ -183,7 +183,7 @@
                   стоимости и сроков испытания
                   Ваших строительных материалов!</div>
 
-              <button class="button button--yellow" data-remodal-target="quiz-modal-1">Получить расчет стоимости
+              <button class="button button--yellow" data-remodal-target="quiz-modal">Получить расчет стоимости
                   и сроков испытаний</button>
             </div>
           </div>
@@ -786,149 +786,168 @@
       </form>
     </div>
   </div>
+  
 
-  <form action="/mail.php" method="post">
-
-  <div class="remodal quiz-modal inverse" data-remodal-id="quiz-modal-1" data-remodal-options="hashTracking: true">
+  <div class="remodal quiz-modal inverse" data-remodal-id="quiz-modal" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close"></button>
 
-    <div class="quiz-modal__title">
-      <i class="quiz-modal__vopros">Вопрос 1/4*</i> 
-      Укажите род деятельности Вашей компании
-    </div>
+    <form action="/mail.php" method="post">
+    
+      <div class="quiz-modal__content active" id="quiz1">
+        <div class="quiz-modal__title">
+          <i class="quiz-modal__vopros">Вопрос 1/4*</i> 
+          Укажите род деятельности Вашей компании
+        </div>
+    
+        <input type="hidden" name="Вопрос1" value="Укажите род деятельности Вашей компании">
+    
+        <label class="checkbox"><input type="radio" name="Ответ1" value="Строительство жилых объектов" checked><span>Строительство жилых объектов</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ1" value="Строительство нежилых объектов"><span>Строительство нежилых объектов</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ1" value="Производство строительных материалов и конструкций"><span>Производство строительных материалов и конструкций</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ1" value="Я являюсь частным лицом, занимающимся строительством"><span>Я являюсь частным лицом, занимающимся строительством</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ1" value="Аудиторская деятельность"><span>Аудиторская деятельность</span></label>
+        <label class="checkbox">
+          <input type="radio" name="Ответ1" value="Другое">
+          <span>Другое
+            <input type="text" name="Ответ1_текст" class="input input--small" placeholder="Введите текст *">
+          </span>      
+        </label>
+    
+        <div class="text-right">
+          <a href="#" class="quiz-modal__link data-toggle" data-hide="quiz1" data-show="quiz2">Следующий вопрос</a>
+        </div>
+      </div>
 
-    <input type="hidden" name="Вопрос1" value="Укажите род деятельности Вашей компании">
+      <div class="quiz-modal__content" id="quiz2">
+        <div class="quiz-modal__title">
+          <i class="quiz-modal__vopros">Вопрос 2/4*</i>
+          Выберите материалы и изделия, которые 
+          необходимо испытать <span>(Можно указать 1 и более вариантов)</span>
+        </div>
+    
+        <input type="hidden" name="Вопрос2" value="Выберите материалы и изделия, которые необходимо испытать">
+    
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Портландцемент и шлакопортландцемент" checked><span>Портландцемент и шлакопортландцемент</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Щебень и гравий"><span>Щебень и гравий</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Песок"><span>Песок</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Сухие смеси и готовые строительные растворы"><span>Сухие смеси и готовые строительные растворы</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Минеральная вата"><span>Минеральная вата</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Грунт"><span>Грунт</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Керамический кирпич и камень"><span>Керамический кирпич и камень</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Добавки для бетона и строительных растворов"><span>Добавки для бетона и строительных растворов</span></label>
+        <label class="checkbox"><input type="radio" name="Ответ2" value="Изделия и конструкции из бетона"><span>Изделия и конструкции из бетона</span></label>
+        <label class="checkbox">
+          <input type="radio" name="Ответ2" value="Другое">
+          <span>Другое
+            <input type="text" name="Ответ2_текст" class="input input--small" placeholder="Введите текст *">
+          </span>      
+        </label>
+    
+        <div class="text-right">
+          <a href="#" class="quiz-modal__link data-toggle" data-hide="quiz2" data-show="quiz3">Следующий вопрос</a>
+        </div>
+      </div>
 
-    <label class="checkbox"><input type="radio" name="Ответ1" value="Строительство жилых объектов" checked><span>Строительство жилых объектов</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ1" value="Строительство нежилых объектов"><span>Строительство нежилых объектов</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ1" value="Производство строительных материалов и конструкций"><span>Производство строительных материалов и конструкций</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ1" value="Я являюсь частным лицом, занимающимся строительством"><span>Я являюсь частным лицом, занимающимся строительством</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ1" value="Аудиторская деятельность"><span>Аудиторская деятельность</span></label>
-    <label class="checkbox">
-      <input type="radio" name="Ответ1" value="Другое">
-      <span>Другое
-        <input type="text" name="Ответ1_текст" class="input input--small" placeholder="Введите текст *">
-      </span>      
-    </label>
+      <div class="quiz-modal__content" id="quiz3">
+        <div class="quiz-modal__title">
+          <i class="quiz-modal__vopros">Вопрос 3/4*</i>
+          Укажите период времени, к которому Вам 
+          нужны результаты испытаний
+        </div>
+    
+        <input type="hidden" name="Вопрос3" value="Укажите период времени, к которому Вам нужны результаты испытаний">
+    
+        <textarea name="Ответ3" class="textarea textarea--small" placeholder="Введите текст *"></textarea>
+    
+        <div class="text-right">
+          <a href="#" class="quiz-modal__link data-toggle" data-hide="quiz3" data-show="quiz4">Следующий вопрос</a>
+        </div>
+      </div>
 
-    <div class="text-right">
-      <a href="#" class="quiz-modal__link" data-remodal-target="quiz-modal-2">Следующий вопрос</a>
-    </div>
+      <div class="quiz-modal__content" id="quiz4">
+        <div class="quiz-modal__title">
+          <i class="quiz-modal__vopros">Вопрос 4/4*</i>
+          Введите комментарий и/или прикрепите файл
+          с дополнительной информацией (в случае наличия)
+        </div>
+    
+        <input type="hidden" name="Вопрос4" value="Введите комментарий и/или прикрепите файл с дополнительной информацией (в случае наличия)">
+    
+        <p>Прикрепить файл с информацией для расчетов <label class="inputfile"><input type="file" name="Файл"></label></p>
+    
+        <textarea name="Комментарий" class="textarea textarea--small" placeholder="Комментарий"></textarea>
+    
+        <div class="text-right">
+          <button class="button button--yellow data-toggle" data-hide="quiz4" data-show="quiz5">Получить расчет стоимости</button>
+        </div>
+      </div>
+
+      <div class="quiz-modal__content" id="quiz5">
+        <div class="quiz-modal__title">
+          <i class="quiz-modal__vopros">Последний этап</i>
+          Укажите данные, и в течение 30 минут мы с Вами свяжемся с результатами расчетов стоимости и сроков испытания строительных материалов
+        </div>
+      
+        <div class="form form--vertical inverse">
+          <div class="form__content">
+            <input type="hidden" name="info" value="Получить расчет стоимости">
+  
+            <div class="input-div">
+              <input type="text" class="input" name="name" placeholder="Как к Вам обращаться? *" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <div class="input-div">
+              <input type="text" class="input" name="company" placeholder="Название компании *" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+    
+            <div class="input-div">
+              <input type="tel" class="input" name="phone" placeholder="Введите номер телефона*" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <div class="input-div">
+              <input type="email" class="input" name="email" placeholder="Введите e-mail*" required>
+              <span class="error-message">Заполните это поле</span>
+            </div>
+  
+            <button class="button button--yellow ajax-submit" type="submit" id="polu4it_ras4et_stoimosti">Получить расчет стоимости</button>
+  
+            <div class="form__info">* Ваши данные защищены и не будут переданы третьим лицам</div>
+          </div>
+        </div>
+      </div>
+    
+    </form>
+    
 
   </div>
 
   <div class="remodal quiz-modal inverse" data-remodal-id="quiz-modal-2" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close"></button>
 
-    <div class="quiz-modal__title">
-      <i class="quiz-modal__vopros">Вопрос 2/4*</i>
-      Выберите материалы и изделия, которые 
-      необходимо испытать <span>(Можно указать 1 и более вариантов)</span>
-    </div>
-
-    <input type="hidden" name="Вопрос2" value="Выберите материалы и изделия, которые необходимо испытать">
-
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Портландцемент и шлакопортландцемент" checked><span>Портландцемент и шлакопортландцемент</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Щебень и гравий"><span>Щебень и гравий</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Песок"><span>Песок</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Сухие смеси и готовые строительные растворы"><span>Сухие смеси и готовые строительные растворы</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Минеральная вата"><span>Минеральная вата</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Грунт"><span>Грунт</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Керамический кирпич и камень"><span>Керамический кирпич и камень</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Добавки для бетона и строительных растворов"><span>Добавки для бетона и строительных растворов</span></label>
-    <label class="checkbox"><input type="radio" name="Ответ2" value="Изделия и конструкции из бетона"><span>Изделия и конструкции из бетона</span></label>
-    <label class="checkbox">
-      <input type="radio" name="Ответ2" value="Другое">
-      <span>Другое
-        <input type="text" name="Ответ2_текст" class="input input--small" placeholder="Введите текст *">
-      </span>      
-    </label>
-
-    <div class="text-right">
-      <a href="#" class="quiz-modal__link" data-remodal-target="quiz-modal-3">Следующий вопрос</a>
-    </div>
+    
   </div>
 
   <div class="remodal quiz-modal inverse" data-remodal-id="quiz-modal-3" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close"></button>
 
-    <div class="quiz-modal__title">
-      <i class="quiz-modal__vopros">Вопрос 3/4*</i>
-      Укажите период времени, к которому Вам 
-      нужны результаты испытаний
-    </div>
-
-    <input type="hidden" name="Вопрос3" value="Укажите период времени, к которому Вам нужны результаты испытаний">
-
-    <textarea name="Ответ3" class="textarea textarea--small" placeholder="Введите текст *"></textarea>
-
-    <div class="text-right">
-      <a href="#" class="quiz-modal__link" data-remodal-target="quiz-modal-4">Следующий вопрос</a>
-    </div>
+    
 
   </div>
 
   <div class="remodal quiz-modal inverse" data-remodal-id="quiz-modal-4" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close"></button>
 
-    <div class="quiz-modal__title">
-      <i class="quiz-modal__vopros">Вопрос 4/4*</i>
-      Введите комментарий и/или прикрепите файл
-      с дополнительной информацией (в случае наличия)
-    </div>
-
-    <input type="hidden" name="Вопрос4" value="Введите комментарий и/или прикрепите файл с дополнительной информацией (в случае наличия)">
-
-    <p>Прикрепить файл с информацией для расчетов <label class="inputfile"><input type="file" name="Файл"></label></p>
-
-    <textarea name="Комментарий" class="textarea textarea--small" placeholder="Комментарий"></textarea>
-
-    <div class="text-right">
-      <button class="button button--yellow" data-remodal-target="quiz-modal-5">Получить расчет стоимости</button>
-    </div>
+    
 
   </div>
 
   <div class="remodal quiz-modal inverse" data-remodal-id="quiz-modal-5" data-remodal-options="hashTracking: true">
     <button data-remodal-action="close" class="remodal-close"></button>
 
-    <div class="quiz-modal__title">
-      <i class="quiz-modal__vopros">Последний этап</i>
-      Укажите данные, и в течение 30 минут мы с Вами
-свяжемся с результатами расчетов стоимости
-и сроков испытания строительных материалов
-    </div>
-
-    <div class="form form--vertical inverse">
-        <div class="form__content">
-          <input type="hidden" name="info" value="Получить расчет стоимости">
-
-          <div class="input-div">
-            <input type="text" class="input" name="name" placeholder="Как к Вам обращаться? *" required>
-            <span class="error-message">Заполните это поле</span>
-          </div>
-
-          <div class="input-div">
-            <input type="text" class="input" name="company" placeholder="Название компании *" required>
-            <span class="error-message">Заполните это поле</span>
-          </div>
-  
-          <div class="input-div">
-            <input type="tel" class="input" name="phone" placeholder="Введите номер телефона*" required>
-            <span class="error-message">Заполните это поле</span>
-          </div>
-
-          <div class="input-div">
-            <input type="email" class="input" name="email" placeholder="Введите e-mail*" required>
-            <span class="error-message">Заполните это поле</span>
-          </div>
-
-          <button class="button button--yellow ajax-submit" type="submit" id="polu4it_ras4et_stoimosti">Получить расчет стоимости</button>
-
-          <div class="form__info">* Ваши данные защищены и не будут
-              переданы третьим лицам</div>
-        </div>
-    </div>
+    
   </div>
 
   </form>
