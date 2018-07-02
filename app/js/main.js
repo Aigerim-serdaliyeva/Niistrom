@@ -165,10 +165,42 @@ $(document).ready(function () {
     items: 1,
     smartSpeed: 500,
     margin: 30,
+    autoplay: true,
+    autoplaySpeed: 3000,
     navText: ['', ''],
     responsive: {
       0: { mouseDrag: false, dots: true, nav: false },
       768: { mouseDrag: true, dots: false, nav: true },
+    },
+  });
+
+  $(".carousel-advantage").owlCarousel({
+    nav: false,
+    dots: true,
+    loop: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false },
+      576: { items: 2, mouseDrag: true },
+      768: { items: 3 },
+      991: { items: 4 },
+    },
+  });
+
+  $(".carousel-service-project").owlCarousel({
+    nav: false,
+    dots: true,
+    loop: true,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { items: 1, mouseDrag: false },
+      576: { items: 2, mouseDrag: true },
+      768: { items: 3 },
+      991: { items: 4 },
     },
   });
 
@@ -191,27 +223,29 @@ $(document).ready(function () {
     nav: false,
     dots: true,
     loop: true,
-    items: 2,
-    smartSpeed: 500,
-    margin: 30,
-    navText: ['', ''],
-    responsive: {
-      0: { mouseDrag: false },
-      576: { mouseDrag: true },
-    },
-  });
-
-  $(".carousel-attestat").owlCarousel({
-    dots: true, 
-    nav: false,
-    loop: true,
     smartSpeed: 500,
     margin: 30,
     navText: ['', ''],
     responsive: {
       0: { items: 1, mouseDrag: false },
-      576: { items: 2, mouseDrag: true },
-      991: { items: 1 },
+      576: { items: 1, mouseDrag: true },
+      768: { items: 2}
+    },
+  });
+
+  $(".carousel-attestat").owlCarousel({
+    items: 1,
+    dots: true, 
+    nav: false,
+    loop: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    smartSpeed: 500,
+    margin: 30,
+    navText: ['', ''],
+    responsive: {
+      0: { mouseDrag: false },
+      576: { mouseDrag: true }
     },
   });
 
@@ -223,7 +257,7 @@ $(document).ready(function () {
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
       576: { items: 2, mouseDrag: true, dots: false, nav: true },
-      991: { items: 3 },
+      991: { items: 3, dots: false, nav: true },
     },
   });
 
@@ -249,7 +283,7 @@ $(document).ready(function () {
     responsive: {
       0: { items: 1, mouseDrag: false, dots: true, nav: false },
       576: { items: 2, mouseDrag: true, dots: false, nav: true },
-      991: { items: 3 },
+      991: { items: 3, dots: false, nav: true },
     },
   });
 
@@ -273,10 +307,25 @@ $(document).ready(function () {
     $("#"+id).addClass("active");
   });
 
+  $(".tabs-select .dropdown-item").click(function(e) {
+    var $this = $(this);
+    $this.closest(".tabs-select").find(".button").html($this.html());
+    $(".tabcontent").removeClass("active");
+    $($this.attr('href')).addClass("active");
+
+    e.preventDefault();
+  });
+
   $(".modal-toggle").click(function() {
     $("[data-remodal-id=" + $(this).data('show') + "]").remodal().open();
   });
 
+  var mi = 0;
+  $(".s-service__more").click(function() {
+    $(".service-hidden").toggleClass("d-flex d-none");
+    mi = 1 - mi;
+    $(this).html( mi === 0 ? "Еще" : "Скрыть");
+  });
 
 });
 

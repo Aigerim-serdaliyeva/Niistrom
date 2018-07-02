@@ -44,6 +44,7 @@
 .item {
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   &-image {
     margin-bottom: 10px;
@@ -81,7 +82,7 @@
 }
 
 .address-block {
-  max-width: 185px;
+  max-width: 190px;
 }
 
 .phone-block {
@@ -92,6 +93,7 @@
 
 .header {
   width: 100%;
+  font-weight: 600;
   background-color: #fff;
   border-bottom: 2px solid $accent;
   padding-bottom: 10px;
@@ -110,7 +112,7 @@
   }
 
   &__title {
-    font-weight: normal;
+    font-weight: 600;
     font-size: 14px;
     color: $accent;
     flex-grow: 1;
@@ -206,7 +208,7 @@
     display: inline-block;
     line-height: 1.5;
     text-decoration: none;
-    font-weight: normal;
+    font-weight: 600;
     padding: 5px;
     border: 1px solid transparent;
 
@@ -391,6 +393,10 @@
 .s-service {
   background-image: url('../img/service-back.jpg');
 
+  &__more {
+    margin-bottom: 30px;
+  }
+
   .tab {
     display: flex;
     align-items: center;
@@ -418,6 +424,17 @@
 
     &.active {
       display: block;
+    }
+  }
+
+  .tabs-select {
+    .button {
+      display: flex;
+      align-items: center;
+    }
+
+    .dropdown-toggle::after {
+      font-size: 2em;
     }
   }
 
@@ -452,23 +469,23 @@
     }
   }
 
-  &__project {
-    
-    .service-project {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 20px;
+  .carousel-service-project {
+    margin-bottom: 20px;
+  }
 
-      img {
-        margin-bottom: 12px;
-      }
+  .service-project {
+    display: flex;
+    flex-direction: column;
 
-      &__title {
-        font-size: 14px;
-        font-weight: 600;
-        margin-bottom: 12px;
-        flex-grow: 1;
-      }
+    img {
+      margin-bottom: 12px;
+    }
+
+    &__title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      flex-grow: 1;
     }
   }
 }
@@ -548,6 +565,7 @@
   .employee {
     display: flex;
     flex-direction: column;
+
     img {
       margin-bottom: 20px;
     }
@@ -560,6 +578,7 @@
     }
 
     &-summary {
+      font-weight: 600;
       margin-bottom: 10px;
     }
 

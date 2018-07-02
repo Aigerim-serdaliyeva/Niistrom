@@ -5,6 +5,30 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+
+  .form {
+    &--horizontal {
+      .form {
+        &__content {
+          flex-direction: column;
+          max-width: 500px !important;
+        } 
+        
+        &__info {
+          max-width: 500px;
+        }
+      }
+
+      .input-div {
+        margin-right: 0;
+      }  
+    }
+
+    .input-div, .button {
+      width: 100%;
+    }
+  }
+
 	.header {
     &__title {
       display: none;
@@ -99,6 +123,10 @@
   .s-main {
     padding-top: 30px;
 
+    .carousel-main {
+      margin-bottom: 60px;
+    }
+
     .aside {
       margin-bottom: 30px;
     }
@@ -121,30 +149,7 @@
 }
 
 // ≥768px
-@include media-breakpoint-down(sm) {  
-
-  .form {
-    &--horizontal {
-      .form {
-        &__content {
-          flex-direction: column;
-          max-width: 500px !important;
-        } 
-        
-        &__info {
-          max-width: 500px;
-        }
-      }
-
-      .input-div {
-        margin-right: 0;
-      }  
-    }
-
-    .input-div, .button {
-      width: 100%;
-    }
-  }
+@include media-breakpoint-down(sm) {    
 
   .logo {
     max-width: 200px;
@@ -163,7 +168,18 @@
   }
 
   .s-main {
-      
+    .main {
+      &__bottom {
+        flex-direction: column;
+      }
+
+      &__item {
+        &--big, &--center {
+          width: 100%;
+          font-size: 14px;
+        }        
+      }
+    }
   } 
   
   .s-service {
