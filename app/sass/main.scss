@@ -796,6 +796,14 @@
   background-image: url('../img/quiz-modal.jpg');
   color: #fff;
 
+  &__content {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
   &__title {
     color: $yellow;
     font-size: 16px;

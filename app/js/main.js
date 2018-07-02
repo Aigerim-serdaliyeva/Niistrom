@@ -327,6 +327,18 @@ $(document).ready(function () {
     $(this).html( mi === 0 ? "Еще" : "Скрыть");
   });
 
+  $(".data-toggle").click(function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    $("#" + $this.data("hide")).removeClass("active");
+    $("#" + $this.data("show")).addClass("active");
+  });
+
+  $(document).on('closing', '.quiz-modal', function (e) {
+    $(".quiz-modal__content").removeClass("active");
+    $("#quiz1").addClass("active");
+  });
+
 });
 
 
