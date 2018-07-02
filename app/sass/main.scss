@@ -10,6 +10,7 @@
 }
 
 .table {
+  display: block;
   border-collapse: collapse;
 
   th {
@@ -570,6 +571,10 @@
     max-width: 1010spx;
     padding: 0 80px;
     margin: 0 auto;
+
+    .owl-stage {
+      align-items: flex-start;
+    }
   }
 
 }

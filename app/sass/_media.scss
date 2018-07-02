@@ -225,6 +225,14 @@
       }
     }
   }
+
+  .s-article {
+    .article {
+      &__title {
+        font-size: 20px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width : 660px) {
@@ -276,6 +284,22 @@
       &__inputs {
         margin-right: 0;
         margin-bottom: 10px;
+      }
+    }
+  }
+
+  .s-article {
+    .table {
+      th, td {
+        font-size: 13px;
+        padding: 3px;
+      }
+      th:nth-child(2), td:nth-child(2) {
+        display: none;
+      }
+
+      td:nth-child(1) {
+        width: auto;
       }
     }
   }
