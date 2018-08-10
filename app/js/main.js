@@ -262,7 +262,7 @@ $(document).ready(function () {
   });
 
   $(".carousel-employee").owlCarousel({
-    loop: true,
+    loop: false,
     dots: true, 
     nav: false,
     smartSpeed: 500,
