@@ -157,10 +157,15 @@
   }
 
   &__language {
-    a {
-      &.active {
-        color: $accent;
-      }
+    @include list();
+    display: flex;
+
+    .current-lang a {
+      color: $accent;
+    }
+
+    .sep {
+      margin: 0 3px;
     }
   }
 
@@ -195,6 +200,7 @@
 
   &__comand {
     margin-left: 30px;
+    text-align: center;
 
     a {
       margin-top: 3px;
@@ -218,6 +224,12 @@
     &.last {
       margin-right: 0;
     }
+
+    &.link a {
+      &:hover, &.active {
+        border: 1px solid $accent;
+      }
+    }
   }
 
   a {
@@ -227,12 +239,6 @@
     font-weight: 600;
     padding: 5px;
     border: 1px solid transparent;
-
-    &.link {
-      &:hover, &.active {
-        border: 1px solid $accent;
-      }
-    }
   }
 }
 
@@ -1031,10 +1037,15 @@
   ul {
     margin: 0;
     padding: 0;
+
     li {
       font-size: 12px;
       font-weight: 600;
       list-style: none;
+    }
+
+    ul {
+      padding-left: 30px;
     }
   }
 
